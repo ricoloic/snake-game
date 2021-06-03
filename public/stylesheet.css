@@ -2,11 +2,25 @@ body {
     background-color: #3f3f3f !important;
 }
 
+h6 {
+    color: aliceblue;
+}
+
+.arrow-button {
+    width: 60px;
+    height: 60px;
+}
+
 .container-template {
     text-align: center;
     padding-top: 2em;
     padding-left: 2em;
     padding-right: 2em;
+}
+
+.center-flex-child {
+    justify-content: center;
+    align-items: center;
 }
 
 .title {

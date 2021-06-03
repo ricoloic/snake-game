@@ -4,16 +4,34 @@
     <meta charset="UTF-8">
     <title>The Snake Game</title>
     <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+          integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <script src="p5.min.js"></script>
     <script src="snake.js"></script>
     <script src="sketch.js"></script>
 </head>
 <body>
-    <div class="container-template">
-        <h1 class="title">The Snake Game</h1>
-        <br>
-        <div id="canvas-container" style="max-width: min-content; max-height: min-content; margin: auto;"></div>
+<div class="container-template">
+    <h1 class="title">The Snake Game</h1>
+    <h6>use "AWSD" or the arrows to move</h6>
+    <br>
+    <div id="canvas-container" style="max-width: min-content; max-height: min-content; margin: auto;"></div>
+    <div class="row center-flex-child">
+        <div class="col-1">
+            <button onclick="snake.changeDirection('left')" class="arrow-button arrow-button-y">←</button>
+        </div>
+        <div class="col-1">
+            <div>
+                <button onclick="snake.changeDirection('up')" class="arrow-button arrow-button-x">↑</button>
+            </div>
+            <div>
+                <button onclick="snake.changeDirection('down')" class="arrow-button arrow-button-x">↓</button>
+            </div>
+        </div>
+        <div class="col-1">
+            <button onclick="snake.changeDirection('right')" class="arrow-button arrow-button-y">→</button>
+        </div>
     </div>
+</div>
 </body>
 </html>

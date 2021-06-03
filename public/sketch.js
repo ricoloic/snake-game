@@ -24,10 +24,10 @@ function setup() {
 }
 
 function keyPressed() {
-	if (keyCode == UP_ARROW) snake.changeDirection('up');
-	else if (keyCode == DOWN_ARROW) snake.changeDirection('down');
-	else if (keyCode == LEFT_ARROW) snake.changeDirection('left');
-	else if (keyCode == RIGHT_ARROW) snake.changeDirection('right');
+	if (keyCode == 38 || keyCode == 87) snake.changeDirection('up');
+	else if (keyCode == 40 || keyCode == 83) snake.changeDirection('down');
+	else if (keyCode == 37 || keyCode == 65) snake.changeDirection('left');
+	else if (keyCode == 39 || keyCode == 68) snake.changeDirection('right');
 }
 
 function draw() {
