@@ -1,4 +1,4 @@
-const width = 800, height = 600, scl = 30;
+const width = 900, height = 600, scl = 30;
 
 let snake, food, dead = false;
 
