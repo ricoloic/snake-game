@@ -1,0 +1,18 @@
+body {
+    background-color: #3f3f3f !important;
+}
+
+.container-template {
+    text-align: center;
+    padding-top: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.title {
+    color: aliceblue;
+}
+
+#defaultCanvas0 {
+    box-shadow: 0px 0px 20px 10px #333;
+}
