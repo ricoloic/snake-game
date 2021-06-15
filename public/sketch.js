@@ -99,3 +99,7 @@ function gameScene() {
 	fill(255, 0, 85);
 	rect(food.x, food.y, scl, scl);
 }
+
+document.addEventListener('swiped', function (e) {
+	if (e.detail.dir) snake.changeDirection(e.detail.dir);
+});
