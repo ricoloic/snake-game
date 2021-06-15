@@ -11,11 +11,25 @@ h6 {
     height: 60px;
 }
 
+.btn-end {
+    background-color: #c53333 !important;
+}
+
+.btn-start {
+    background-color: #01ac01 !important;
+}
+
+.btn-start, .btn-end {
+    margin: auto;
+    font-size: 1.3em !important;
+    font-weight: bold !important;
+}
+
 .container-template {
-    text-align: center;
-    padding-top: 2em;
-    padding-left: 2em;
-    padding-right: 2em;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    /*width: 100vh;*/
 }
 
 .center-flex-child {
@@ -27,6 +41,27 @@ h6 {
     color: aliceblue;
 }
 
+.btn-end:hover, .btn-end:focus {
+    background-color: #ad1e1e !important;
+}
+
+.btn-start:hover, .btn-start:focus {
+    background-color: #019d01 !important;
+}
+
+.btn-start:hover, .btn-start:focus, .btn-end:hover, .btn-end:focus {
+    transition: 100ms;
+    transform: scale(1.1);
+}
+
 #defaultCanvas0 {
-    box-shadow: 0px 0px 20px 10px #333;
+    box-shadow: 0 0 20px 10px #333;
+}
+
+#end, #start {
+    text-align: center !important;
+}
+
+#end *, #start * {
+    color: aliceblue;
 }

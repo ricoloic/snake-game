@@ -12,26 +12,21 @@
 </head>
 <body>
 <div class="container-template">
-    <h1 class="title">The Snake Game</h1>
-    <h6>use "AWSD" or the arrows to move</h6>
-    <br>
-    <div id="canvas-container" style="max-width: min-content; max-height: min-content; margin: auto;"></div>
-    <div class="row center-flex-child">
-        <div class="col-1">
-            <button onclick="snake.changeDirection('left')" class="arrow-button arrow-button-y">←</button>
-        </div>
-        <div class="col-1">
-            <div>
-                <button onclick="snake.changeDirection('up')" class="arrow-button arrow-button-x">↑</button>
-            </div>
-            <div>
-                <button onclick="snake.changeDirection('down')" class="arrow-button arrow-button-x">↓</button>
-            </div>
-        </div>
-        <div class="col-1">
-            <button onclick="snake.changeDirection('right')" class="arrow-button arrow-button-y">→</button>
-        </div>
+    <!--    <h1 class="title">The Snake Game</h1>-->
+    <!--    <h6>use "AWSD" or the arrows to move</h6>-->
+    <!--    <br>-->
+    <div id="end">
+        <h2>You lost the game</h2>
+        <br>
+        <button id="try-again" class="btn btn-end btn-lg" onclick="changeScene('game')">Try Again</button>
     </div>
+    <div id="start">
+        <h2>Start the game</h2>
+        <h4>press "AWSD" or the arrows to move</h4>
+        <br>
+        <button id="start-game" class="btn btn-start btn-lg" onclick="changeScene('game')">Start Game</button>
+    </div>
+    <div id="canvas-container" style="max-width: min-content; max-height: min-content; margin: auto;"></div>
 </div>
 </body>
 </html>
