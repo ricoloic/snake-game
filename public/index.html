@@ -13,19 +13,17 @@
 </head>
 <body>
 <div class="container-template">
-    <!--    <h1 class="title">The Snake Game</h1>-->
-    <!--    <h6>use "AWSD" or the arrows to move</h6>-->
-    <!--    <br>-->
     <div id="end">
-        <h2>You lost the game</h2>
+        <!-- <h3 id="best-score"></h3> -->
+        <h3 id="score"></h3>
         <br>
-        <button id="try-again" class="btn btn-end btn-lg" onclick="changeScene('game')">Try Again</button>
+        <button id="try-again" onclick="changeScene('game')">Try Again</button>
     </div>
     <div id="start">
         <h2>Start the game</h2>
         <h4>press "AWSD" or the arrows to move</h4>
         <br>
-        <button id="start-game" class="btn btn-start btn-lg" onclick="changeScene('game')">Start Game</button>
+        <button id="start-game" onclick="changeScene('game')">Start Game</button>
     </div>
     <div id="canvas-container" style="max-width: min-content; max-height: min-content; margin: auto;"></div>
 </div>

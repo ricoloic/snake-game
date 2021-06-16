@@ -6,21 +6,17 @@ h6 {
     color: aliceblue;
 }
 
-.arrow-button {
-    width: 60px;
-    height: 60px;
+#try-again, #start-game {
+    box-shadow: 0 0 9px 2px aliceblue !important;
+    background-color: #292929FF !important;
+    color: #d6d6d6 !important;
 }
 
-.btn-end {
-    background-color: #c53333 !important;
-}
-
-.btn-start {
-    background-color: #01ac01 !important;
-}
-
-.btn-start, .btn-end {
+#start-game, #try-again {
+    border: none;
+    border-radius: .2em;
     margin: auto;
+    padding: .7em .8em !important;
     font-size: 1.3em !important;
     font-weight: bold !important;
 }
@@ -29,7 +25,6 @@ h6 {
     display: grid;
     place-items: center;
     height: 100vh;
-    /*width: 100vh;*/
 }
 
 .center-flex-child {
@@ -41,16 +36,16 @@ h6 {
     color: aliceblue;
 }
 
-.btn-end:hover, .btn-end:focus {
-    background-color: #ad1e1e !important;
+#try-again:hover, #try-again:focus, #start-game:hover, #start-game:focus {
+    box-shadow: 0 0 15px 2px aliceblue !important;
+    border: none;
 }
 
-.btn-start:hover, .btn-start:focus {
-    background-color: #019d01 !important;
-}
-
-.btn-start:hover, .btn-start:focus, .btn-end:hover, .btn-end:focus {
-    transition: 100ms;
+#start-game:hover,
+#start-game:focus,
+#try-again:hover,
+#try-again:focus {
+    transition: 100ms cubic-bezier(1, 0.1, 0.54, 1.08) !important;
     transform: scale(1.1);
 }
 
@@ -64,4 +59,9 @@ h6 {
 
 #end *, #start * {
     color: aliceblue;
+}
+
+#score {
+    display: inline-block;
+    margin: 1em;
 }
