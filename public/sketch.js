@@ -132,7 +132,7 @@ function gameScene() {
   text(`Current Score ${currentScore}`, 30, 40);
   text(
     `Best Score ${bestScore}`,
-    width - 155 - bestScore.toString() * 10,
+    width - 155 - bestScore.toString().length * 10,
     40
   );
   fill(255, 0, 85);
