@@ -11,7 +11,7 @@ I've redone some basic functions and made a more polished UI, running in nodejs,
 ```
 **Link to live project, video, or image:**
 -
-## [Live Project](https://invincible-ivy-coffee.glitch.me/)
+## [Live Project](https://snake-game-rico.glitch.me/)
 ## [Repository Github](https://github.com/ricoloic/snake-game)
 
 ![start screen](https://imgur.com/wOtbADr.png)
